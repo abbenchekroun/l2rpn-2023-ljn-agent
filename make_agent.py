@@ -12,7 +12,7 @@ import numpy as np
 from grid2op.gym_compat import BoxGymObsSpace, GymEnv
 
 from .gym_assets.action_space import GlobalTopoActionSpace
-from .LJNagent import LJNAgent, LJNAgentTopoNN
+from .LJNAgent import LJNAgent, LJNAgentTopoNN
 from .utils import NN_ACT_SPACE_DIR
 
 

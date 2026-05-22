@@ -20,5 +20,11 @@ override-dependencies = [
     "gymnasium>=0.28",
 ]
 
-[tool.setuptools.packages.find]
-include = ["modules*", "assets*", "gym_assets*"]
+[tool.setuptools]
+packages = ["LJNAgent", "LJNAgent.modules", "LJNAgent.assets", "LJNAgent.gym_assets"]
+
+[tool.setuptools.package-dir]
+"LJNAgent" = "."
+"LJNAgent.modules" = "modules"
+"LJNAgent.assets" = "assets"
+"LJNAgent.gym_assets" = "gym_assets"

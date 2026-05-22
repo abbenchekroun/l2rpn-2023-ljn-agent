@@ -59,8 +59,8 @@ To use this agent as it is as a baseline, we recommend using `make_agent_challen
 import grid2op
 from lightsim2grid.lightSimBackend import LightSimBackend
 
-from l2rpn_baselines.LJNAgent import make_agent_topoNN
-from l2rpn_baselines.LJNAgent.modules.rewards import MaxRhoReward
+from LJNAgent import make_agent_topoNN
+from LJNAgent.modules.rewards import MaxRhoReward
 
 # Instantiate environment
 # Our agent is using greedy search mechanism based on a reward function. Hence one should specify a relevent reward function and pass it as an arg for the env.
@@ -165,7 +165,7 @@ python l2rpn_baselines/LJNAgent/evaluate.py --nb_episode=2 --nb_process=1 --verb
 
 **Python code**
 ```python
-from l2rpn_baselines.LJNAgent import LJNAgent, evaluate
+from LJNAgent import LJNAgent, evaluate
 from lightsim2grid.lightSimBackend import LightSimBackend # Recommended for faster simulation
 from grid2op import make
 

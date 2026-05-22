@@ -19,3 +19,6 @@ dependencies = [
 override-dependencies = [
     "gymnasium>=0.28",
 ]
+
+[tool.setuptools.packages.find]
+include = ["modules*", "training*", "models*", "assets*", "gym_assets*"]

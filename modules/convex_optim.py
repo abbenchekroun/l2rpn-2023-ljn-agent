@@ -26,7 +26,13 @@ from grid2op.Agent import BaseAgent
 from grid2op.Backend import PandaPowerBackend
 from grid2op.l2rpn_utils.idf_2023 import ObservationIDF2023
 from lightsim2grid.lightSimBackend import LightSimBackend
-from lightsim2grid.gridmodel import init
+
+def init(pp_net):
+    try:
+        from lightsim2grid.gridmodel import init_from_pandapower as _init  # >= 0.12.0
+    except ImportError:
+        from lightsim2grid.gridmodel.from_pandapower.initGridModel import init as _init  # < 0.12.0
+    return _init(pp_net)
 
 from .base_module import BaseModule
 

@@ -4,5 +4,5 @@ l2rpn_baselines
 lightsim2grid
 numpy
 torch
-curriculum_agent
+curriculumagent
 stable-baselines3
